@@ -1,3 +1,17 @@
+// nav 부드럽게 페이지 이동
+$('.nav > ul > li > a').click(function(event){
+    event.preventDefault()
+    let s_top = $(window).scrollTop();
+    // console.log($(this).attr('href'))
+    let sec_top = $(this).attr('href');
+    s_top = $(`${sec_top}`).offset().top;
+    $('html, body').animate({
+        scrollTop: s_top
+    }, 300)
+    //페이지 깜빡거림
+})
+
+
 // home ///////////////////////////////////////////////////
 //글씨 효과
 let count = 0;
