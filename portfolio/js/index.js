@@ -42,7 +42,7 @@ $(window).scroll(function(){
     let percent_num2 = 0 
     let percent_num3 = 0 
 
-    if(percent_chk && w_top >= skill_top - 600) {
+    if(percent_chk && w_top >= skill_top - 500) {
         percent_chk = false;
 
         //게이지바 너비 늘어나는 효과
@@ -98,18 +98,18 @@ $(window).scroll(function(){
 
 // portfolio //////////////////////////////////////////////
 let sec3_top_1 = $('#sec3').offset().top;
-// let sec3_top_2 = $('#sec3 > .contents').eq(1).offset().top;
+let sec3_top_2 = $('#sec3 > .contents').eq(1).offset().top;
 
 $(window).scroll(function(){
     let s_top = $(window).scrollTop();
     if(s_top >= sec3_top_1 - 500) {
-        $('.p_imgbox1 > img').addClass('p_img1_active')
+        $('.p_imgbox2 > img').addClass('p_img2_active')
     }
-    // if(s_top >= sec3_top_2 - 500) {
-    //     console.log(1212)
-    //     $('.p_imgbox2 > img').addClass('p_img2_active')
-    //     console.log(1313)
-    // }
+    if(s_top >= sec3_top_2 - 500) {
+        // console.log(1212)
+        $('.p_imgbox1 > img').addClass('p_img1_active')
+        // console.log(1313)
+    }
 })
 
 // contact ////////////////////////////////////////////////
