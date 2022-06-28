@@ -292,6 +292,7 @@ h2, h3 {
     background: #fff;
     margin: 0 auto;
     font-weight: 700;
+    white-space: nowrap;
 
     position: relative;
 }
@@ -361,6 +362,7 @@ h2, h3 {
     box-sizing: border-box;
     background: white;
     box-shadow: 11px 10px 0 0px rgb(0 0 0 / 9%);
+    white-space: wrap;
     /* background: white; */
 }
 .p_text > p {
@@ -373,6 +375,8 @@ h2, h3 {
     width: 100px;
     font-size: 16px;
     font-weight: 700;
+    padding: 5px 0;
+    white-space: nowrap;
 }
 .p_bold2 {
     font-family: 'GmarketSansMedium';
@@ -405,15 +409,14 @@ h2, h3 {
     line-height: 40px;
     background: #9795f0;
     color: white;
-    margin-top: 50px;
+    margin-top: 30px;
 }
-/* 작은화면 일때 순서 바꾸기 flex/ order/ 1 or 2 */
-/* .p_text2 {
-    order: 2;
+.color2_1 {
+    background: #e3c0a5;
 }
-.p_imgbox2 {
-    order: 1;
-} */
+.color2_2 {
+    background: #9ca091;
+}
 
 /* contact //////////////////////////////////////////// */
 #sec4 > .contents {
@@ -617,6 +620,7 @@ h2, h3 {
             width: 90px;
             font-size: 14px;
             font-weight: 700;
+            
         }
         .p_bold2 {
             font-family: 'GmarketSansMedium';
@@ -625,7 +629,10 @@ h2, h3 {
             font-weight: 700;
             padding: 10px 0;
         }
-
+        .p_text > p {
+            /* font-weight: 500; */
+            font-size: 12px;
+        }
     }
 
 
